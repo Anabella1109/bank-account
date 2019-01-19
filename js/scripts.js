@@ -30,7 +30,7 @@ User.prototype.withdraw= function(newDeposit){
   var num1=newDeposit;
   console.log(typeof num1)
    var amount2=parseInt(this.UserBalance);
-   console.log(typeof amount1)
+   console.log(typeof amount2)
    if(this.userBalance<=0){
      alert("Can't withdraw.Your have minimum balance")
    }
@@ -98,7 +98,7 @@ $(document).ready(function() {
     $("#home").hide();
     $("#withdrawal").hide()
     $("#myAccount1").hide()
-    $("#deposit h3").text(newUser.userBalance)
+    
    $(".accountBalance").hide();
     
   });
@@ -107,32 +107,29 @@ $(document).ready(function() {
     $("#home").hide()
    $("#deposit").hide();
    $("#myAccount1").hide()
-   $("#withdrawal h3").text(balance)
    $(".accountBalance h3").hide();
  
  })
   
  
-  $("form#deposit3").submit(function(event){
+  $("#deposit2").click(function(event){
     event.preventDefault();
     var newAmount=$("input#depositAmount").val();
-    // newAmount=parseInt(newAmount);
-   newerBalance= newUser.deposit(newAmount);
-    console.log(newUser.deposit(newAmount));
-    $("#deposit h3").text(newerBalance);
+   newBalance= newUser.deposit(newAmount);
+    $("#deposit h3").text(newUser.userBalance);
+    alert("CHECK MY ACCOUNT FOR BALANCE")
     newAmount=$("input#depositAmount").val("");
 
   })
 
-  $("form#withdraw").submit(function(event){
+  $("#withdrawal1").click(function(event){
     event.preventDefault();
     var amount= $("input#withdrawalAmount").val();
-    console.log(amount)
    newerBalance= newUser.withdraw(amount);
-    console.log(newUser.withdraw(amount));
-    $("#withdrawal h3").text(newerBalance);
+    $("#withdrawal h3").text(newUser.userBalance);
+    alert("CHECK MY ACCOUNT FOR BALANCE")
+
     amount= $("input#withdrawalAmount").val("");
-    // balance=newerBalance;
 
 
   })
