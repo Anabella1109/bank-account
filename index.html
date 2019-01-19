@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Bank</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <script
+  src="https://code.jquery.com/jquery-3.3.1.js"
+  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  crossorigin="anonymous"></script>
+  <script src="js/scripts.js"></script>
+
+</head>
+<body>
+  <div class="nav">
+    <nav>
+      <ul>
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="#myAccount1" id="myAccount">MY ACCOUNT</a></li>
+       <li><a href="#deposit" id="deposit1">DEPOSIT</a></li>
+        <li><a href="#withdrawal" id="withdraw">WITHDRAWAL</a></li>
+      </ul>
+    </nav>
+    <h1 id="head">Welcome to Nova Bank</h1>
+  </div>
+  <div class="container" id="home">
+    <h2 id="homeh2">Saving account application form</h2>
+
+    <form id="new-account">
+      <label for="first name">First name</label><br>
+      <input type="text" placeholder="Enter first name" id="firstName"><br>
+      <!-- <label for="middle name">Middle name</label>
+      <input type="text" placeholder="Enter middle name"><br> -->
+      <label for="last name">Last name</label><br>
+      <input type="text" placeholder="Enter last name" id="lastName"><br>
+      <label for="e-mail">E-mail</label><br>
+      <input type="text" placeholder="Enter your e-mail here" id="email"><br>
+      <label for="dob">Date of birth:</label><br>
+      <input id="born" class="form-control" type="date" id="dob"><br>
+      <label for="id">Phone number</label><br>
+      <input type="text" placeholder="Enter id number" id="phoneNumber"><br>
+      <label for="id">ID number</label><br>
+      <input type="text" placeholder="Enter id number" id="userId"><br>
+      <label for="initial deposit">Initial deposit</label><br>
+      <input type="number" placeholder="Enter your initial deposit" id="initialDeposit" ><br>
+     <center> <button type="submit" id="createAccount">Create Account</button></center>
+ 
+    </form>
+    <div class="accountBalance">
+      <h2>Account Balance</h2>
+       <h3></h3>
+    </div>
+  </div>
+  <div id="myAccount1" class="container">
+    <h1>MY ACCOUNT</h1>
+      <h2></h2>
+            
+  <p>First name: <span class="first-name"></span></p>
+  <p>Last name: <span class="last-name"></span></p>
+  <p>Phone Number: <span class="phone"></span></p>
+  <p>E-mail: <span class="email"></span></p>
+  <p>Date of birth: <span class="dob"></span></p>
+
+  <p>Account Number: <span class="number"></span></p>
+  <p>Account Balance: <span class="balance"></span></p>
+
+  </div>
+  <div id="deposit" class="container">
+    <h2>Money deposit</h2>
+       <form id="deposit3">
+          <label for="first name">First name</label><br>
+          <input type="text" placeholder="Enter first name"><br>
+          <label for="last name">Last name</label><br>
+          <input type="text" placeholder="Enter last name"><br>
+          <label for="last name">Amount to deposit</label><br>
+          <input type="number" placeholder="Enter amount to deposit " id="depositAmount"><br>
+          <label for="last name">Amount to deposit(in words)</label><br>
+          <input type="text" placeholder="Enter amount in words"><br>
+          
+          <center><button type="submit" id="deposit2">Deposit</button></center>
+       </form>
+      <h2>Account Balance</h2>
+
+       <h3></h3>
+
+  </div>
+
+  <div id="withdrawal" class="container">
+      <h2>Money withdrawal</h2>
+         <form id="withdraw">
+            <label for="first name">First name</label><br>
+            <input type="text" placeholder="Enter first name"><br>
+            <label for="last name">Last name</label><br>
+            <input type="text" placeholder="Enter last name"><br>
+            <label for="last name" >Amount to withdraw</label><br>
+            <input type="number" placeholder="Enter amount to withdraw" id="withdrawalAmount"><br>
+            <label for="last name">Amount to withdraw(in words)</label><br>
+            <input type="text" placeholder="Enter amount in words"><br>
+            <center><button type="submit" id="withdrawal1">Withdraw</button></center>
+           
+         </form>
+         <h2>Account Balance</h2>
+         <h3></h3>
+    </div>
+  
+</body>
+</html>
